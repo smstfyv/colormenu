@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+}
+body{
+    background: linear-gradient(to right bottom, gold, chocolate);
+    margin: 0;
+    text-decoration: none;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colormenu ul{
+    list-style-type: none;
+    padding: 0;
+}
+.colormenu ul li span{
+    color: white;
+    mix-blend-mode: difference;
+}
+.colormenu ul li{
+    font-size: 40px;
+    font-family: sans-serif;
+    background-color: white;
+    border: 2px solid black;
+    width: 5em;
+    height: 1.5em;
+    cursor: pointer;
+    position: relative;
+    margin: 15px;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+.colormenu ul li::before{
+    background-color: black;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    width: 1.5em;
+    height: 61px;
+    transition: 0.5s ease-out;
+    left: -35px;
+    display: block;
+    top: 0;
+    
+    
+}
+.colormenu ul li:hover::before {
+	transform: scale(7);
+}
